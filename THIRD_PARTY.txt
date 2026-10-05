@@ -1,0 +1,43 @@
+AuraCam dependency and media notices
+
+The application Python source is provided in app/ and the small launcher
+source is provided as launcher.c. Third-party libraries are unmodified binary
+distributions, dynamically loaded from runtime/Lib/site-packages, and may be
+replaced with compatible versions. Their respective licenses continue to apply.
+
+Python 3.12.10 (PSF license): https://www.python.org/downloads/release/python-31210/
+License: runtime/LICENSE.txt
+
+PySide6 / Shiboken6 / Qt 6.8.3 (LGPLv3 / GPLv3 / commercial, as applicable):
+https://doc.qt.io/qtforpython-6/licenses.html
+https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.8.3-src/
+https://download.qt.io/archive/qt/6.8/6.8.3/single/
+License notices: the PySide6*, shiboken6* .dist-info directories in site-packages.
+Qt multimedia includes dynamically linked FFmpeg libraries and original notices.
+
+OpenCV / opencv-python-headless 4.11.0.86:
+https://github.com/opencv/opencv-python
+License notices: opencv_python_headless-*.dist-info and cv2/LICENSE*.
+
+YuNet face_detection_yunet_2023mar.onnx (MIT):
+https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet
+License: app/assets/models/LICENSE-YuNet.txt
+
+NumPy 2.2.6 (BSD and bundled library licenses):
+https://numpy.org/
+License notices: numpy-*.dist-info.
+
+imageio-ffmpeg 0.6.0 wrapper (BSD-2-Clause):
+https://github.com/imageio/imageio-ffmpeg
+Windows FFmpeg binary is redistributed as supplied by that wheel.
+FFmpeg: https://ffmpeg.org/legal.html
+Binary build source/instructions: https://github.com/BtbN/FFmpeg-Builds
+Licenses and bundled binary provenance: imageio_ffmpeg-*.dist-info and
+imageio_ffmpeg/binaries/README.md. The FFmpeg CLI is invoked as a separate process.
+
+Media in app/assets/edits and app/assets/sounds is extracted from the reference
+video supplied by the user, TikTok @mundane.mp4. No ownership or open license
+for that media is asserted. It is included for the user's requested local recreation.
+The face detection model and downloaded packages do not include user recordings.
+
+DEPENDENCIES_SHA256.json records hashes of downloaded input distributions.
